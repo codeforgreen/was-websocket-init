@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Hello WebSocket</title>
-    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="/main.css" rel="stylesheet">
     <script src="/webjars/jquery/jquery.min.js"></script>
     <script src="/webjars/sockjs-client/sockjs.min.js"></script>
@@ -27,7 +27,6 @@
             </form>
         </div>
     </div>
-    <!-- Public message -->
     <div class="row" id="messages" hidden>
         <div class="col-md-12">
             <form class="form-inline">
@@ -39,7 +38,18 @@
             </form>
         </div>
     </div>
-    <!-- Public message -->
+    <div class="row" id="privateMessages" hidden>
+        <div class="col-md-12">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="message">Private Message:</label>
+                    <input type="text" id="privateMessage" class="form-control" placeholder="Your message here">
+                    <input type="text" id="privateMessageTo" class="form-control" placeholder="Username">
+                    <button id="sendPrivateMessage" class="btn btn-default" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <table id="conversation" class="table table-striped">
