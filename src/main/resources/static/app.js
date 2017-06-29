@@ -13,6 +13,7 @@ function setConnected(connected) {
         $("#conversation").hide();
     }
     $("#greetings").html("");
+
 }
 
 function connect() {
