@@ -8,7 +8,7 @@ import java.util.Map;
 
 @SpringBootApplication
 public class Application {
-    static final Map<String,String> WS_MAPPING = new HashMap<>();
+    public static final Map<String, String> WS_MAPPING = new HashMap<>();
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
